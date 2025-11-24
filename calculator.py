@@ -1,5 +1,4 @@
 import math
-
 def calculator(a, b, choice):
     if choice == "+":
         return a + b
@@ -29,17 +28,12 @@ def main():
         if choice == "exit":
             print("Calculator closed.")
             break
-
-        # Operations needing only one number
         if choice in ["sq", "!"]:
             a = int(input("Enter a number: "))
             b = None
         else:
             a = int(input("Enter first number: "))
             b = int(input("Enter second number: "))
-
         print("Result:", calculator(a, b, choice))
-
-
-# Start program
 main()
+
